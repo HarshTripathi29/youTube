@@ -1,0 +1,51 @@
+/*Header */
+.header{
+  width : screen;
+  height : 50px;
+  display : flex;
+  padding : 5px 20px;
+  border-bottom: 5px solid black;
+}
+
+.search{
+  padding :0;
+  margin : 5px 50px;
+}
+
+.searchInput{
+  border : 3px solid black;
+  border-right: 0;
+  border-radius : 12px 0px 0px 12px; 
+  width : 300px;
+  height : 26px;
+}
+
+.searchBtn{
+  border : 3px solid black;
+  border-radius : 0px 12px 12px 0px; 
+  width : 60px;
+  height : 32px;
+}
+
+.hamburgerImg{
+  margin : 0px 10px;
+}
+
+.userImg{
+  float: left;
+}
+
+/* Side Bar*/
+
+.sideBar{
+  height : 420px;
+  width: 170px;
+  border : 2px solid black;
+  overflow: hidden;
+  margin : 10px;
+  box-shadow: 5px 10px rgb(28, 28, 28);
+}
+
+.sideBar ul li{
+  list-style-type: none;
+}
