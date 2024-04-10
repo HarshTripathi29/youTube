@@ -1,0 +1,88 @@
+/* Body */
+.body{
+  display : flex;
+  flex-direction: row;
+}
+
+/*Main Container*/
+.mainContainer{
+  border : 2px solid black;
+  margin : 10px;
+  width : 1290px;
+  height : 600px;
+}
+
+/* Button List*/
+.buttonList{
+  display: flex;
+  flex-direction: row;
+  width : 1290px;
+  border-bottom: 2px solid black;
+}
+
+
+/*Button*/
+.buttonMainContainer{
+  height : 30px;
+  width : 60px;
+  margin : 5px 10px;
+  border : 2px solid black;
+  border-radius: 0px;
+  background-color: rgb(36, 36, 36);
+  color : white;
+}
+
+/*Header */
+.header{
+  width : screen;
+  height : 50px;
+  display : flex;
+  padding : 5px 20px;
+  border-bottom: 5px solid black;
+  
+}
+
+.search{
+  padding :0;
+  margin : 5px 50px;
+}
+
+.searchInput{
+  border : 3px solid black;
+  border-right: 0;
+  border-radius : 0px 0px 0px 0px; 
+  width : 300px;
+  height : 26px;
+}
+
+.searchBtn{
+  border : 3px solid black;
+  border-radius : 0px 0px 0px 0px; 
+  width : 60px;
+  height : 32px;
+}
+
+.hamburgerImg{
+  margin : 0px 10px;
+  cursor: pointer;
+  height : 40px;
+}
+
+.userImg{
+  
+}
+
+/* Side Bar*/
+
+.sideBar{
+  height : 420px;
+  width: 170px;
+  border : 2px solid black;
+  overflow: hidden;
+  margin : 10px;
+  box-shadow: 5px 10px rgb(28, 28, 28);
+}
+
+.sideBar ul li{
+  list-style-type: none;
+}
