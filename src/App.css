@@ -1,3 +1,36 @@
+/* Body */
+.body{
+  display : flex;
+  flex-direction: row;
+}
+
+/*Main Container*/
+.mainContainer{
+  border : 2px solid black;
+  margin : 10px;
+  width : 1090px;
+  height : 600px;
+}
+
+/* Button List*/
+.buttonList{
+  display: flex;
+  flex-direction: row;
+  width : 1090px;
+  border-bottom: 2px solid black;
+}
+
+/*Button*/
+.buttonMainContainer{
+  height : 30px;
+  width : 60px;
+  margin : 5px 10px;
+  border : 2px solid black;
+  border-radius: 0px;
+  background-color: rgb(36, 36, 36);
+  color : white;
+}
+
 /*Header */
 .header{
   width : screen;
@@ -5,6 +38,7 @@
   display : flex;
   padding : 5px 20px;
   border-bottom: 5px solid black;
+  
 }
 
 .search{
@@ -15,24 +49,26 @@
 .searchInput{
   border : 3px solid black;
   border-right: 0;
-  border-radius : 12px 0px 0px 12px; 
+  border-radius : 0px 0px 0px 0px; 
   width : 300px;
   height : 26px;
 }
 
 .searchBtn{
   border : 3px solid black;
-  border-radius : 0px 12px 12px 0px; 
+  border-radius : 0px 0px 0px 0px; 
   width : 60px;
   height : 32px;
 }
 
 .hamburgerImg{
   margin : 0px 10px;
+  cursor: pointer;
+  height : 40px;
 }
 
 .userImg{
-  float: left;
+  
 }
 
 /* Side Bar*/
@@ -43,9 +79,31 @@
   border : 2px solid black;
   overflow: hidden;
   margin : 10px;
+  padding-left: 0px ;
   box-shadow: 5px 10px rgb(28, 28, 28);
 }
 
 .sideBar ul li{
+  
   list-style-type: none;
+}
+
+
+.videoContainer{
+  display: flex;
+}
+/*
+card 
+*/
+
+.card{
+  height : 200px;
+  width : 300px;
+  border : 2px solid black;
+  margin : 10px;
+  
+}
+
+.cardImg{
+  width : screen;
 }
