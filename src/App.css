@@ -8,15 +8,18 @@
 .mainContainer{
   border : 2px solid black;
   margin : 10px;
-  width : 1090px;
-  height : 600px;
+  width : 980px;
+  height : screen;
+  padding: 10px;
+  position : absolute;
+  right: 0;
 }
 
 /* Button List*/
 .buttonList{
   display: flex;
   flex-direction: row;
-  width : 1090px;
+  width : 980px;
   border-bottom: 2px solid black;
 }
 
@@ -91,6 +94,8 @@
 
 .videoContainer{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /*
 card 
@@ -98,12 +103,29 @@ card
 
 .card{
   height : 200px;
-  width : 300px;
+  width : 220px;
   border : 2px solid black;
   margin : 10px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: top;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
 }
 
 .cardImg{
-  width : screen;
+ width: 220px;
+ height:140px ;
+}
+
+.card ul {
+  float: left;
+  padding-left: 2px;
+  font-size: 12px;
+}
+
+.card ul li{
+  list-style-type: none;
 }

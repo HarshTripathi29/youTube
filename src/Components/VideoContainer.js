@@ -13,7 +13,7 @@ const VideoContainer = () => {
   // const [video, setVideo] = useState(" ");
 
   const getVideos=async()=>{
-    const data = await fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&key=AIzaSyCfTD2_KPR5FhqBrCxSHz0fMTk1AVXTuwo");
+    const data = await fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=AIzaSyCfTD2_KPR5FhqBrCxSHz0fMTk1AVXTuwo");
     const json = await data.json();
     console.log(json);
     console.log(json.items[0].snippet.channelTitle)
@@ -26,9 +26,12 @@ const VideoContainer = () => {
   },[]);
 
   return (video && (
+    <>
+    <h2>Videos</h2>
     <div 
     className='videoContainer'>
-    <h2>Videos</h2>
+    
+   
     {
       video.map((videos)=>(
       <VideoCard 
@@ -40,6 +43,7 @@ const VideoContainer = () => {
     }
      
     </div>
+    </>
   )
 )
 }

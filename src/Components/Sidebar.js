@@ -5,7 +5,6 @@ import MenuItems from "./MenuItems"
 const Sidebar = () => {
   return (
     <div className='sideBar '>
-      
       <ul>
         <li>Home</li>
         <li>Shorts</li>

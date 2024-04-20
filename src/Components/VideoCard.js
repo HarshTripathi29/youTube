@@ -4,12 +4,16 @@ const VideoCard = ({title, thumbnail, views}) => {
   return (
     <div className='card'>
       <img 
-        className=""
+        className="cardImg"
         src={thumbnail}
         placeholder = "thumbnail"
       />
-      <h3>{title}</h3>
-      <p>{views}</p>
+      <ul>
+        <li><b>{title}</b></li>
+        <li>{views} views</li>
+      </ul>
+      {/* <p className='cardTitle'>{title}</p>
+      <p className='cardViews'>{views}</p> */}
     </div>
   )
 }
