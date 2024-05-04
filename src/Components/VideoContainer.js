@@ -4,6 +4,8 @@ import {useEffect} from "react";
 import { addVideos } from '../utils/videoSlice';
 import {useSelector} from "react-redux";
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 const VideoContainer = () => {
 
@@ -34,11 +36,13 @@ const VideoContainer = () => {
    
     {
       video.map((videos)=>(
+      <Link to={"/watch?="+video.id}>
       <VideoCard 
         title={videos.snippet.title} 
         thumbnail={videos.snippet.thumbnails.default.url}
         views={videos.statistics.viewCount}
        />
+      </Link>
       ))
     }
      

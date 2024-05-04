@@ -1,12 +1,13 @@
 import React from 'react'
 import "../App.css"
-import MenuItems from "./MenuItems"
+import MenuItems from "./MenuItems";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className='sideBar '>
       <ul>
-        <li>Home</li>
+        <Link to="/"><li>Home</li></Link>
         <li>Shorts</li>
         <li>Videos</li>
         <li>Live</li>

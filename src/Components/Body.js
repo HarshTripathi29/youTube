@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import MainContainer from "./MainContainer"
 import store from '../utils/store'
 import {useSelector} from "react-redux"
+import { Outlet } from 'react-router'
 
 const Body = () => {
 
@@ -11,8 +12,7 @@ const Body = () => {
   return (
     <div className='body'>    
     {(!isMenuOpen)? <Sidebar/> : null}
-     
-      <MainContainer/>
+    <Outlet/>
     </div>
   )
 }
